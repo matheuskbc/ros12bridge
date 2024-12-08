@@ -1,0 +1,11 @@
+<launch>
+
+    <node
+        name="ros1bridge_node"   
+        exec="parameter_bridge"
+        pkg="ros1_bridge"
+        output="screen"
+    >
+    </node>
+
+</launch>

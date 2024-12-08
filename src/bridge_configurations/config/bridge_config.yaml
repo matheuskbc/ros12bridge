@@ -1,0 +1,42 @@
+topics:
+  -
+    topic: /scan 
+    type: sensor_msgs/msg/LaserScan
+    queue_size: 10
+  -
+    topic: /odom
+    type: nav_msgs/msg/Odometry
+    queue_size: 10
+  -
+    topic: /cmd_vel
+    type: geometry_msgs/msg/Twist
+    queue_size: 10
+  -
+    topic: /tf
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 10
+  -
+    topic: /tf_static
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 100
+    qos:
+      reliability: reliable
+      history: keep_last
+      depth: 10
+      durability: transient_local
+  -
+    topic: /joint_states
+    type: sensor_msgs/msg/JointState
+    queue_size: 10
+  -
+    topic: /imu/data
+    type: sensor_msgs/msg/Imu
+    queue_size: 10
+  -
+    topic: /imu/data_raw
+    type: sensor_msgs/msg/Imu
+    queue_size: 10
+  -
+    topic: /imu/mag
+    type: sensor_msgs/msg/MagneticField
+    queue_size: 10
