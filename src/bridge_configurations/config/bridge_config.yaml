@@ -17,19 +17,19 @@ topics:
     queue_size: 10
     qos:
       reliability: reliable
-  # -
-  #   topic: /tf
-  #   type: tf2_msgs/msg/TFMessage
-  #   queue_size: 10
-  # -
-  #   topic: /tf_static
-  #   type: tf2_msgs/msg/TFMessage
-  #   queue_size: 100
-  #   qos:
-  #     reliability: reliable
-  #     history: keep_last
-  #     depth: 10
-  #     durability: transient_local
+  -
+    topic: /tf
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 10
+  -
+    topic: /tf_static
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 100
+    qos:
+      reliability: reliable
+      history: keep_last
+      depth: 10
+      durability: transient_local
   -
     topic: /joint_states
     type: sensor_msgs/msg/JointState
