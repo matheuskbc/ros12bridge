@@ -12,7 +12,8 @@ RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/r
 RUN sudo apt update && sudo apt install -yq \
     ros-foxy-ros-base \
     python3-argcomplete \
-    ros-foxy-ros1-bridge
+    ros-foxy-ros1-bridge \
+    ros-foxy-rmw-cyclonedds-cpp
 
 
 COPY ./scripts ./scripts
